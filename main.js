@@ -31,13 +31,3 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
     }
   });
 });
-
-var scroll = document.getElementById("top");
-window.addEventListener("scroll", () => {
-  scroll.style.transform = "rotate(" + window.pageYOffset + "deg)";
-  if (window.pageYOffset > 100) {
-    scroll.classList.add("active");
-  } else {
-    scroll.classList.remove("active");
-  }
-});
